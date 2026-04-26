@@ -66,18 +66,8 @@ def create_app():
 app = create_app()
 
 
-# Run the application when this file is executed directly
 if __name__ == "__main__":
-    # Print a helpful message when starting the server
-    print("=" * 50)
-    print("Task API with Flask")
-    print("=" * 50)
-    print("Server starting at http://127.0.0.1:5001")
-    print("Press Ctrl+C to stop the server")
-    print("=" * 50)
-    
-    # Run the Flask development server
-    # debug=True enables auto-reload and detailed error pages
-   import os
+    import os
 
-app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 10000)), debug=True)
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port)
