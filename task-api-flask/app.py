@@ -4,6 +4,7 @@ app.py - Main entry point
 This is the main application file that starts the Flask server.
 It registers the API routes and configures the application.
 """
+from database import init_db
 
 from flask import Flask, jsonify
 
@@ -18,6 +19,8 @@ def create_app():
         Configured Flask application instance.
     """
     app = Flask(__name__)
+    
+    init_db()
     
     # Configure the app
     app.config["JSON_SORT_KEYS"] = False
