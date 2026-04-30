@@ -1,69 +1,97 @@
 # ⏳ Python Countdown Timer
 
-Simple countdown timer built in Python.
-The user inputs a number of seconds, and the program counts down to zero.
+A simple and interactive countdown timer built with Python.
+It allows users to input time in seconds or `mm:ss` format and displays a live countdown in the terminal.
+
+---
 
 ## 🚀 Features
 
-* Input validation (only accepts numbers)
-* Displays time in **MM:SS format**
-* Real-time countdown in terminal
-* Clean and simple logic (great for beginners)
+* Accepts time in seconds or `mm:ss`
+* Real-time countdown display
+* Clean `MM:SS` formatting
+* Handles invalid input
+* Safe interruption with `Ctrl + C`
+* Voice alert when finished (macOS)
 
-## 📂 Project Structure
+---
 
+## 📸 Preview
+
+```text
+Enter time (seconds or mm:ss): 1:10
+
+⏳ 01:10
+⏳ 01:09
+⏳ 01:08
+...
+Time's up!
 ```
-countdown.py
-file-organizer.py
-database.py
-```
 
-## 🧠 How it works
+---
 
-* Takes user input in seconds
-* Converts to integer
-* Uses a `while` loop to decrement time
-* Formats using `divmod()` into minutes and seconds
-* Updates output every second with `time.sleep(1)`
+## ▶️ How to Run
 
-## ▶️ How to run
-
-Make sure you have Python installed.
+Make sure you have Python 3 installed.
 
 ```bash
 python countdown.py
 ```
 
-## 📌 Example
+or:
 
+```bash
+python3 countdown.py
 ```
-Enter the number of seconds for the countdown: 10
-00:10
-00:09
-...
-00:00
-Time's up!
+
+---
+
+## 📂 Project Structure
+
+```text
+countdown/
+├── countdown.py
+└── README.md
 ```
+
+---
+
+## 🧠 Concepts Used
+
+* Functions
+* Loops (`while`)
+* Conditionals (`if/else`)
+* Input validation
+* Time manipulation (`time.sleep`)
+* String formatting (`f-strings`)
+* Error handling
+
+---
 
 ## 🛠️ Technologies
 
 * Python 3
 
-## 🎯 Purpose
+---
 
-This project was built for learning basic Python concepts:
+## ⚠️ Notes
 
-* Loops
-* Conditionals
-* User input
-* Time handling
-
-## 📈 Next Improvements
-
-* Add sound alert when finished
-* GUI version (Tkinter)
-* Pause/Resume feature
+* The voice alert uses `os.system('say')`, which works only on macOS
+* On Windows/Linux, this feature can be replaced with other libraries
 
 ---
 
-Made by Giann 🚀
+## 📈 Future Improvements
+
+* Add pause/resume feature
+* Add custom sound alerts
+* Create GUI version (Tkinter)
+* Add CLI arguments (`python countdown.py 60`)
+* Build web version with Flask
+
+---
+
+## 👨‍💻 Author
+
+Giann Battistutta
+GitHub: https://github.com/GiannBattistutta
