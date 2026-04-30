@@ -1,97 +1,33 @@
-# ⏳ Python Countdown Timer
+# Countdown Timer
 
-A simple and interactive countdown timer built with Python.
-It allows users to input time in seconds or `mm:ss` format and displays a live countdown in the terminal.
+A terminal-based countdown timer built with Python.  
+This project allows users to enter time in seconds or `mm:ss` format and displays a live countdown in the terminal.
 
----
+## Features
 
-## 🚀 Features
+- Accepts time in seconds
+- Accepts time in `mm:ss` format
+- Displays a live countdown
+- Formats time as `MM:SS`
+- Validates user input
+- Handles invalid values
+- Supports safe interruption with `Ctrl + C`
+- Plays a voice alert when the countdown finishes on macOS
 
-* Accepts time in seconds or `mm:ss`
-* Real-time countdown display
-* Clean `MM:SS` formatting
-* Handles invalid input
-* Safe interruption with `Ctrl + C`
-* Voice alert when finished (macOS)
+## Technologies Used
 
----
+- Python
+- Time module
+- OS module
+- Terminal / Command Line
 
-## 📸 Preview
+## How It Works
 
-```text
-Enter time (seconds or mm:ss): 1:10
+The program asks the user to enter a time value.  
+The input can be provided as total seconds or in `minutes:seconds` format.
 
-⏳ 01:10
-⏳ 01:09
-⏳ 01:08
-...
-Time's up!
-```
-
----
-
-## ▶️ How to Run
-
-Make sure you have Python 3 installed.
-
-```bash
-python countdown.py
-```
-
-or:
-
-```bash
-python3 countdown.py
-```
-
----
-
-## 📂 Project Structure
+Examples:
 
 ```text
-countdown/
-├── countdown.py
-└── README.md
-```
-
----
-
-## 🧠 Concepts Used
-
-* Functions
-* Loops (`while`)
-* Conditionals (`if/else`)
-* Input validation
-* Time manipulation (`time.sleep`)
-* String formatting (`f-strings`)
-* Error handling
-
----
-
-## 🛠️ Technologies
-
-* Python 3
-
----
-
-## ⚠️ Notes
-
-* The voice alert uses `os.system('say')`, which works only on macOS
-* On Windows/Linux, this feature can be replaced with other libraries
-
----
-
-## 📈 Future Improvements
-
-* Add pause/resume feature
-* Add custom sound alerts
-* Create GUI version (Tkinter)
-* Add CLI arguments (`python countdown.py 60`)
-* Build web version with Flask
-
----
-
-## 👨‍💻 Author
-
-Giann Battistutta
+60
 GitHub: https://github.com/GiannBattistutta
